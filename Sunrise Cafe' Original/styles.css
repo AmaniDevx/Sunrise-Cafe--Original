@@ -7,7 +7,7 @@ body{
   background-color: rgba(0,0,0,0.9);
   font-size: 16px;
   line-height: 1.5rem;
-  overflow-x: hidden;
+  
 }
 /* Header and navigation*/
 .header{
@@ -117,7 +117,7 @@ nav a{
     margin-left: 100px;
     margin-bottom: 30px;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     margin-top: 20px;
    }
 .description p3{
@@ -335,6 +335,7 @@ color: #cf711f;
   align-items: center;
   margin-bottom: 5px;
   padding: 2px;
+  border-radius: 10px;
   
 }
 .form-group{
@@ -344,7 +345,7 @@ margin-left: 11px;
 }
 
 .form input{
-  margin-left:70px ;
+  margin-left:20px ;
   margin-bottom: 20px;
   width: 280px;
   border-top: #cf711f;
@@ -448,30 +449,117 @@ margin-top: -44px;
   width: 80px;
   height: auto;
 }
-.logos{
-  width: 50px;
-}
+
 
 /*Media Queries*/
 
 /* Small phones Portrait*/
-@media(max-width:400px){
+@media(max-width:372px){
+  .header{
+    display: flex;
+    flex-direction:column;
+  }
   .Rest-name{
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+
   }
+  .header-text{
+    
+  }
+  .description{
+    font-size: 0.05rem;
+    margin: 2px;
+  }
+  .learn{
+    margin-left: 2px;
+  }
+  .account{
+    margin-right: 2px;
+    margin-left: 5px;
+  }
+  .logo{
+    margin-right:-50px;
+  }
+
   table{
-    font-size: 0.8rem;
+    font-size: 0.4rem;
+    width: 350px;
+
   }
+.Order-Summary{
+  width: 350px;
+  
+}
+.form input{
+  width: 100px;
+}
+
   .Food-img{
     width: 60px;
     height: 60px;
   }
+  .contact-form{
+    display:flex;
+    flex-direction: column;
+    width: 350px;
+  
+  }
+  .Company{
+    align-items: center;
+    margin-left: -50px;
+  }
+  .Restaurant-photo{
+    width: 200px;
+  
+  }
+  .contact-form form{
+    width: 100px;
+    align-items: center;
+  }
+  .form input{
+    width: 250px;
+    margin-left: -60px;
+  }
+  #table-number{
+    margin-left: 20px;
+  }
+  .form-group{
+    width: 150px;
+    margin-left: -60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .radio-options{
+    margin: 1px;
+    display: flex;
+  }
+  #message{
+    width: 250px;
+  margin-bottom: 50px;
+  }
+  h4{
+    font-size: 0.7rem;
+  }
+  .customers p em{
+    font-size: 1rem;
+  }
+  .customers p{
+    font-size: 0.6rem;
+  }
+  .partners{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  }
+
 }
 
 
 /*Phones(landscape) and small tablets and ipad*/
 /* Phones (landscape) and small tablets */
-@media (min-width: 401px) and (max-width: 767px) {
+@media (min-width: 372px) and (max-width: 767px) {
   .header {
     flex-direction: row;
     flex-wrap: wrap;
@@ -485,7 +573,13 @@ margin-top: -44px;
   }
   
   table {
-    font-size: 0.9rem;
+    font-size: 0.4rem;
+  }
+  .Restaurant-photo{
+    margin-top: 50px;
+  }
+  .Order-Summary{
+    width: 500px;
   }
 }
 
@@ -494,6 +588,7 @@ margin-top: -44px;
   .header {
     flex-direction: row;
     align-items: center;
+
   }
   
   .main-nav {
@@ -553,9 +648,16 @@ margin-top: -44px;
 /* Navigation */
 @media (max-width: 767px) {
   .main-nav li {
-    margin:;
+    margin:4px;
     font-size: 0.5rem;
 
+  }
+  h1{
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  nav a{
+    margin-right: 10px;
   }
   
   .nav-link svg {
@@ -571,10 +673,13 @@ margin-top: -44px;
   }
   
   .header-text {
-    font-size: 1.2rem;
+    font-size: 0.6rem;
   }
   
   .description p3 {
+    font-size: 0.6rem;
+  }
+  h3{
     font-size: 0.9rem;
   }
 }
@@ -623,7 +728,8 @@ margin-top: -44px;
   .partners {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 40px;
+  
   }
   .glovo-img{
     width:50px;
