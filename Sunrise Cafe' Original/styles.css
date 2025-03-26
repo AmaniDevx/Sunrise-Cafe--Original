@@ -467,6 +467,11 @@ margin-top: -44px;
   width: 80px;
   height: auto;
 }
+/*copyright*/
+.copyright{
+  text-align: center;
+  color: white;
+}
 
 
 /*Media Queries*/
