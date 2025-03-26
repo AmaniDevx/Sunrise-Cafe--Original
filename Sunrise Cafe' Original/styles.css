@@ -229,7 +229,8 @@ nav a{
   padding: 20px;
 background-color: black;
   border: 1px solid #cf711f;
-width: 1000px;
+width: 100%;
+height: auto;
 margin: 20px auto;
 border-radius: 10px;
 display: flex;
@@ -249,10 +250,11 @@ gap: 10px;
   border-radius: 10px;
 }
 .Order-Summary p{
-  background-color:#fdf2e9;
+  background-color:black;
   border-radius: 10px;
   padding: 2px;
   color: lightgrey;
+  border: 1px solid #cf711f;
 }
 
 input{
@@ -266,6 +268,9 @@ textarea{
   height:60px;
   border: 1px solid #cf711f;
   border-radius: 10px;
+  background-color: black;
+  color: #cf711f;
+  font-family: sans-serif;
 }
 .submit-order{
   background-color: #cf711f;
@@ -329,19 +334,24 @@ color: #cf711f;
 /*Contact Us*/
 .contact-form{
   border: 1px solid #cf711f;
-  margin-bottom: 2px;
   background-color:black ;
   justify-content: center;
   align-items: center;
   margin-bottom: 5px;
   padding: 2px;
   border-radius: 10px;
-  
+  margin:20px auto;
+  width: 1000px;
 }
 .form-group{
   margin-bottom: 10px;
 margin-left: 11px;
 
+}
+.form-group textarea{
+  margin-bottom: 60px;
+  margin-left: -80px;
+  width: 350px;
 }
 
 .form input{
@@ -351,6 +361,13 @@ margin-left: 11px;
   border-top: #cf711f;
   background-color: black;
   color: #cf711f;
+}
+#name{
+  background-color:black;
+color: #cf711f;
+width: 280px;
+border-top: #cf711f;
+
 }
 .radio-option{
   margin: 5px;
@@ -384,6 +401,7 @@ margin-top: -44px;
   height: auto;
   border: 1px solid #cf711f;
   border-radius: 10px;
+  margin-left: 5px;
 }
 .Rest{
   display: flex;
@@ -486,12 +504,22 @@ margin-top: -44px;
     width: 350px;
 
   }
+  .Order{
+    margin: 0 auto;
+  }
 .Order-Summary{
   width: 350px;
   
 }
+.Order-Summary p{
+width: 250px;
+}
+
 .form input{
   width: 100px;
+}
+#name{
+  width: 250px;
 }
 
   .Food-img{
@@ -521,7 +549,10 @@ margin-top: -44px;
     margin-left: -60px;
   }
   #table-number{
-    margin-left: 20px;
+    margin-left: 10px;
+  }
+  #special-request{
+    width: 260px;
   }
   .form-group{
     width: 150px;
@@ -537,6 +568,7 @@ margin-top: -44px;
   #message{
     width: 250px;
   margin-bottom: 50px;
+  margin-left: 5px;
   }
   h4{
     font-size: 0.7rem;
